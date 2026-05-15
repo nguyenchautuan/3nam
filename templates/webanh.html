@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Carousel FIX</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0f172a;
+    font-family:Arial;
+}
+
+.scene{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    perspective:1800px;
+}
+
+.carousel{
+    width:400px;
+    height:400px;
+    position:relative;
+    transform-style:preserve-3d;
+}
+
+.carousel img{
+    position:absolute;
+    width:150px;
+    height:220px;
+    left:50%;
+    top:50%;
+    margin-left:-75px;
+    margin-top:-110px;
+    border-radius:15px;
+    object-fit:cover;
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+    user-select:none;
+    -webkit-user-drag:none;
+    backface-visibility:hidden;
+}
+</style>
+</head>
+
+<body>
+
+<div class="scene">
+    <div class="carousel" id="carousel">
+
+       <img src="/static/images/anh1.png">
+        <img src="/static/images/anh2.jpeg">
+        <img src="/static/images/anh3.jpeg">
+        <img src="/static/images/anh4.jpeg">
+        <img src="/static/images/anh5.jpeg">
+        <img src="/static/images/anh7.jpg">
+        <img src="/static/images/anh19.jpg">
+        <img src="/static/images/anh20.jpg">
+        <img src="/static/images/anh21.jpeg">
+        <img src="/static/images/anh22.jpeg">
+        <img src="/static/images/anh23.png">
+        <img src="/static/images/anh24.jpeg">
+        <img src="/static/images/anh25.JPG">
+        <img src="/static/images/anh26.PNG">
+        <img src="/static/images/IMG_0959.jpg">
+        <img src="/static/images/IMG_1372.jpg">
+        <img src="/static/images/IMG_1485.jpg">
+        <img src="/static/images/IMG_1503.jpg">
+        <img src="/static/images/IMG_1962.jpg">
+        <img src="/static/images/IMG_4490.jpg">
+        <img src="/static/images/IMG_4870.jpg">
+            
+
+    </div>
+</div>
+
+<script>
+
+const carousel = document.getElementById("carousel");
+const images = document.querySelectorAll("img");
+
+const total = images.length;
+const angle = 360 / total;
+const radius = 450;
+
+// ===== TẠO VÒNG TRÒN CHUẨN =====
+images.forEach((img, i) => {
+    img.style.transform =
+        `rotateY(${i * angle}deg) translateZ(${radius}px)`;
+});
+
+let rotation = 0;
+let isDragging = false;
+let startX = 0;
+
+// ===== AUTO ROTATE =====
+function animate(){
+    if(!isDragging){
+        rotation += 0.2;
+    }
+
+    carousel.style.transform =
+        `rotateX(-10deg) rotateY(${rotation}deg)`;
+
+    requestAnimationFrame(animate);
+}
+animate();
+
+// ===== DRAG =====
+document.addEventListener("mousedown",(e)=>{
+    isDragging = true;
+    startX = e.clientX;
+});
+
+document.addEventListener("mouseup",()=>{
+    isDragging = false;
+});
+
+document.addEventListener("mousemove",(e)=>{
+    if(!isDragging) return;
+
+    const dx = e.clientX - startX;
+    rotation += dx * 0.3;
+    startX = e.clientX;
+});
+
+</script>
+
+</body>
+</html>

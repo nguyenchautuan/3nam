@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>3 Years Together ❤️</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         PASSWORD SCREEN
+    ========================== -->
+
+    <div id="password-screen">
+
+        <div class="password-box">
+
+            <h1>❤️ Welcome ❤️</h1>
+
+            <p>
+                Ngày em nhận lời tỏ tình của anh
+            </p>
+
+            <input type="password" id="password-input" placeholder="Password...">
+
+            <button onclick="checkPassword()">
+                Em chắc chớ ^-^
+            </button>
+
+            <p id="error-message"></p>
+
+        </div>
+
+    </div>
+
+    <!-- INTRO SCREEN -->
+    <div id="intro-screen">
+        <div class="intro-content">
+            <h1 id="intro-text">
+
+                Chúc mừng em <br>
+
+                đã bước vào <br>
+
+                hành trình của chúng ta ❤️
+
+            </h1>
+            <p id="ready-text">
+                Em đã sẵn sàng chưa? ✨
+            </p>
+            <button id="enter-btn" onclick="enterMainWebsite()">
+                Em sẵn sàng ❤️
+            </button>
+
+            <!-- HEARTS -->
+            <div class="heart heart1">❤️</div>
+            <div class="heart heart2">❤️</div>
+            <div class="heart heart3">❤️</div>
+            <div class="heart heart4">❤️</div>
+            <div class="heart heart5">❤️</div>
+            <div class="heart heart6">❤️</div>
+            <div class="heart heart7">❤️</div>
+        </div>
+    </div>
+
+    <!-- =========================
+         BACKGROUND MUSIC
+    ========================== -->
+
+    <audio id="bg-music" loop>
+
+        <source src="/static/music/music.mp3" type="audio/mp3">
+
+    </audio>
+
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <section class="hero">
+
+        <!-- DARK OVERLAY -->
+
+        <div class="overlay"></div>
+
+
+        <!-- BACKGROUND IMAGE -->
+
+        <img src="/static/images/left.jpeg" class="side-image left-image">
+        <img src="/static/images/anhchinh.jpg" class="bg-image fade-bg">
+        <img src="/static/images/right.jpeg" class="side-image right-image">
+
+
+        <!-- CONTENT -->
+
+        <div class="content">
+
+            <h1 class="fade-item">
+                ❤️ 3 YEARS TOGETHER ❤️
+            </h1>
+
+            <h2 class="fade-item">
+                Châu Tuấn & Thảo Quyên
+            </h2>
+
+            <p class="fade-item">
+                Since 06/06/2023
+            </p>
+
+            <div id="counter" class="fade-item"></div>
+
+            <button class="fade-item" onclick="scrollToStory()">
+                Our Story
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         TIMELINE
+    ========================== -->
+
+    <section class="timeline hidden" id="story">
+        <h1 class="hidden">
+            Our Journey ✨
+        </h1>
+
+
+        <!-- =========================
+     2023 SECTION
+========================= -->
+
+        <div class="memory-section hidden">
+
+            <h1 class="memory-year">
+                2023 ❤️
+            </h1>
+
+
+            <div class="memory-gallery">
+
+                <!-- BOX 1 -->
+
+                <div class="memory-box">
+
+                    <img src="/static/images/anh2.jpeg" alt="">
+
+                    <div class="memory-info">
+
+                        <h2>
+                            Lần đầu chụp ảnh nè ❤️
+                        </h2>
+
+                        <p>
+
+                            Đây là lúc
+                            hai đứa chụp ảnh đăng công khai nè.
+                            Anh nhớ lúc này là lần đầu tiên anh được ôm em ạ.
+                            Nhớ lại thích vô cùng kk. Lần đầu tiên mà anh xin một người
+                            để đi chơi mà phải quan tâm cảm xúc người đó có giận hay không ạ hic
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- BOX 2 -->
+
+                <div class="memory-box">
+
+                    <img src="/static/images/anh3.jpeg" alt="">
+
+                    <div class="memory-info">
+
+                        <h2>
+                            Ngày sinh nhật hạnh phúc ✨
+                        </h2>
+
+                        <p>
+
+                            Có người tổ chức sinh nhật cho anh nè ❤️ mà bằng tiền của anh ạ kk <br>
+                            Anh nhớ lần này là được tặng cái áo và ví dọc ạ. Món quà tuyệt dời lắm ^-^
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- BOX 3 -->
+
+                <div class="memory-box">
+
+                    <img src="/static/images/anh1.png" alt="">
+
+                    <div class="memory-info">
+
+                        <h2>
+                            Kết thúc năm 2023 🌸
+                        </h2>
+
+                        <p>
+
+                            Đây là tấm ảnh cuối cùng của năm 2023 nè.
+                            Lúc này là lúc hai đứa đi chơi với nhau và chuẩn bị đi đón giao thừa nè.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+     2024 SECTION
+========================= -->
+
+        <div class="memory-section hidden">
+
+            <h1 class="memory-year">
+                2024 ✨
+            </h1>
+
+
+            <div class="memory-gallery">
+
+                <!-- BOX 1 -->
+
+                <div class="memory-box">
+
+                    <img src="/static/images/anh5.jpeg" alt="">
+
+                    <div class="memory-info">
+
+                        <h2>
+                            Áo dài 👘
+                        </h2>
+
+                        <p>
+
+                            Mở màn cho việc năm nào <br>
+                            cũng đi chụp áo dài hehe
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- BOX 2 -->
+
+                <div class="memory-box">
+
+                    <img src="/static/images/anh7.jpg" alt="">
+
+                    <div class="memory-info">
+
+                        <h2>
+                            Những ngày hạnh phúc ❤️
+                        </h2>
+
+                        <p>
+
+                            Lần đầu đi du lịch cùng nhau và có người ôm anh ngủ nè.<br>
+                            Đi chơi với nhau nhiều hơn, được ôm nhau nhiều hơn, được cười với nhau nhiều hơn. <br>
+                            Anh thích những ngày như thế này lắm, <br>
+                            chỉ cần có em bên cạnh là anh thấy hạnh phúc rồi.
+
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- BOX 3 -->
+
+                <div class="memory-box">
+
+                    <img src="/static/images/anh4.jpeg" alt="">
+
+                    <div class="memory-info">
+
+                        <h2>
+                            Đi dự sự kiện 🌸
+                        </h2>
+
+                        <p>
+
+                            Có người làm MC chương trình <br>
+                            năn nỉ mình đi cho bằng được ạ kk <br>
+                            Và đi nghe không hiểu gì hic
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <!-- =========================
+     2025 SECTION
+========================= -->
+
+        <div class="year-2025 hidden">
+
+            <h1 class="memory-year">
+                2025 🎂
+            </h1>
+
+
+            <!-- =====================
+         BIG BOX 1
+    ====================== -->
+
+            <div class="memory-group">
+
+                <h2 class="group-title">
+                    2025 part 1 ❤️
+                </h2>
+
+
+                <div class="memory-gallery">
+
+                    <!-- BOX 1 -->
+
+                    <div class="memory-box">
+
+                        <img src="/static/images/anh8.jpg" alt="">
+
+                        <div class="memory-info">
+
+                            <h2>
+                                Nối chuỗi áo dài nè 🌸
+                            </h2>
+
+                            <p>
+
+                                Hai đứa dễ thương vô cùng kk
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- BOX 2 -->
+
+                    <div class="memory-box">
+
+                        <img src="/static/images/anh14.jpg" alt="">
+
+                        <div class="memory-info">
+
+                            <h2>
+                                Quy Nhơn ❤️
+                            </h2>
+
+                            <p>
+
+                                Có người đòi đi cho biết.<br>
+                                Thế là anh cho tiền đi luôn.<br>
+                                Lúc đó đang giàu mà, em muốn gì mà không được kk
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- BOX 3 -->
+
+                    <div class="memory-box">
+
+                        <img src="/static/images/anh10.jpg" alt="">
+
+                        <div class="memory-info">
+
+                            <h2>
+                                Kỉ niệm 2 năm yêu nhau ☕
+                            </h2>
+
+                            <p>
+
+                                Lúc này anh mới đi thực tập về nè.<br>
+                                Và bắt đầu có người thay đổi anh về kiểu tóc và cách ăn mặc.
+                                Thay đổi mà anh không nhận ra anh luôn mà.<br>
+                                Công nhận em có gu thẩm mỹ ghê á ❤️
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================
+         BIG BOX 2
+    ====================== -->
+
+            <div class="memory-group">
+
+                <h2 class="group-title">
+                    2025 part 2 ❤️
+                </h2>
+
+
+                <div class="memory-gallery">
+
+                    <!-- BOX 1 -->
+
+                    <div class="memory-box">
+
+                        <img src="/static/images/anh11.jpg" alt="">
+
+                        <div class="memory-info">
+
+                            <h2>
+                                Phú Yên ❤️
+                            </h2>
+
+                            <p>
+
+                                Thực hiện lời anh hứa với em là nghỉ hè anh vào Phú Yên chơi và thăm em.
+                                3 ngày 2 đêm đi du lịch tại nơi em sinh ra, không có gì diễn tả được cảm xúc anh lúc đó,
+                                <br>
+                                Thế là đã đi du lịch cùng em được 4 nơi rồi<br>
+                                Gắng thêm 6 nơi nữa là anh làm đúng lời hứa với em ạ.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- BOX 2 -->
+
+                    <div class="memory-box">
+
+                        <img src="/static/images/anh15.jpg" alt="">
+
+                        <div class="memory-info">
+
+                            <h2>
+                                Tốt nghiệp của anh 🎓
+                            </h2>
+
+                            <p>
+
+                                Ngày này là đánh dấu sự trưởng thành của anh và là ngày em lần đầu ra mắt gia
+                                đình anh sau 2 năm. Lúc đó em bẽn lẽn lắm, không khác gì cái đuôi của anh luôn.<br>
+                                Cảm ơn món quà của em lúc đó nha. <br>
+                                Cũng chuẩn bị tốt nghiệp em rồi nè, anh chúc em ra trường có việc làm liền nha ❤️
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- BOX 3 -->
+
+                    <div class="memory-box">
+
+                        <img src="/static/images/anh9.jpg" alt="">
+
+                        <div class="memory-info">
+
+                            <h2>
+                                Tiếp tục hành trình ✨
+                            </h2>
+
+                            <p>
+
+                                2 năm 6 tháng yêu nhau, lúc này anh với em đẹp thật sự kk.
+                                Anh nói vậy thôi ạ kk
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- =========================
+     2026 SECTION
+========================= -->
+        <div class="memory-section hidden">
+
+            <h1 class="memory-year">
+                2026 ✨
+            </h1>
+
+
+            <div class="memory-gallery">
+
+                <!-- BOX 1 -->
+
+                <div class="memory-box">
+
+                    <img src="/static/images/anh17.jpg" alt="">
+
+                    <div class="memory-info">
+
+                        <h2>
+                            Series ❤️
+                        </h2>
+
+                        <p>
+
+                            Cứ mỗi năm lại có một series ảnh mới nè.
+                            Năm sau chắc chắn là áo dài tiếp rồi kk
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- BOX 2 -->
+
+                <div class="memory-box">
+
+                    <img src="/static/images/anh18.jpg" alt="">
+
+                    <div class="memory-info">
+
+                        <h2>
+                            Tiểu thư 🌸
+                        </h2>
+
+                        <p>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- BOX 3 -->
+
+                <div class="memory-box">
+
+                    <img src="/static/images/anh16.jpg" alt="">
+
+                    <div class="memory-info">
+
+                        <h2>
+                            Lại là tiểu thư đây ✨
+                        </h2>
+
+                        <p>
+
+                            Quá đỗi là xinh đẹp
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    
+
+<!-- =========================
+     LOVE LETTER
+========================= -->
+
+<section class="letter hidden">
+
+    <button
+        class="open-letter-btn"
+        onclick="openLetter()"
+    >
+        💌 Em nhấn vào đây để đọc thư
+    </button>
+
+</section>
+
+
+
+<!-- =========================
+     LETTER MODAL
+========================= -->
+
+<div id="letter-modal">
+    <div class="letter-overlay"
+            onclick="closeLetter()"
+> </div>
+
+    <!-- DARK OVERLAY -->
+
+
+    <!-- ENVELOPE -->
+
+    <div
+        class="envelope-container"
+        onclick="event.stopPropagation()"
+    >
+
+        <div class="envelope">
+
+            <!-- TOP -->
+
+            <div class="envelope-top"></div>
+
+
+            <!-- LETTER -->
+
+            <div class="letter-paper">
+
+                <h1 class="letter-text">
+                    Gửi em ❤️
+                </h1>
+
+                <p class="letter-text">
+                    Đây là lần đầu tiên anh viết thư cho em 
+                    bằng theo kiểu này nhở, không biết em có thích không?
+
+                    Sau bao lâu anh hứa làm trang web cho em 
+                    thì giờ anh đã làm cho em rồi đó kk.<br>
+
+                    Cảm ơn em vì đã đến bên anh, và ở bên anh 3 năm vừa qua
+                    mặc dù có những lúc anh làm em buồn, nhưng em vẫn ở bên anh, vẫn yêu anh, vẫn quan tâm anh, vẫn chăm sóc anh, vẫn lo lắng cho anh. <br>
+
+                
+                    Cảm ơn em vì đã cùng anh
+                    đi qua rất nhiều kỷ niệm đẹp.
+               
+                    Anh hy vọng rằng
+                    chúng ta sẽ còn cùng nhau
+                    đi tiếp thật lâu nữa.<br><br>
+                
+                    Anh yêu em ❤️
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+    <!-- =========================
+         ENDING
+    ========================== -->
+
+    <section class="end hidden">
+
+        <h1 class="hidden">
+            And this is only the beginning...
+        </h1>
+
+        <p 
+        class="next-page-btn hidden" 
+        onclick="goToNextPage()" > 
+        Nhấn vào đây ❤️ 
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="/static/js/script.js"></script>
+
+</body>
+
+</html>
+
+   
