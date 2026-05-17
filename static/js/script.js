@@ -53,7 +53,7 @@ function scrollToStory(){
 // PASSWORD
 // =========================
 
-const correctPassword = "06062023";
+const correctPassword = "02052023";
 
 function checkPassword(){
 
